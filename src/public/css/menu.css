@@ -1,0 +1,52 @@
+.bg-image {
+    /* The image used */
+    background-image: url("/public/img/background/bg.png");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-nav {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(27, 27, 27, 0.4); /* Black w/opacity/see-through */
+}
+
+.bg-blur {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/public/img/background/bg.png");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar{
+        margin-left: 170px;
+        margin-right: 170px;
+    }
+}
+
+
+    
+
