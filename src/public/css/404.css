@@ -1,0 +1,16 @@
+.not-found {
+    text-align: center;
+    height: 200px;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+}
+
+div h1{
+
+    font-size: 200px;
+}
+
+div p{
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}

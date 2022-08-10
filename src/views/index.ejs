@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
 
     
     <title>XYZ Community</title>
 </head>
-<body class="bg-dark">
+<body class="bg-dark bg-image-full">
     <%- include('../partials/menu'); %>
-    <h1>Test</h1>
+    <div class="main ">
+        <div class="container">
+            <div class="about">
+                <h4 class="text-light">Hi, We are a Minecraft, discord and web developer team.            </h4>
+                <div class="contenedor">
+                    <h6 class="type-text">We are
+                        <span
+                           class="txt-rotate"
+                           data-period="1000"
+                           data-rotate='[ "NodeJS developers.",
+                            "Spigot & Bungeecord plugin development.",
+                            "Discord bot development.",
+                            "Minecraft server config.",
+                            "Discord Server config" ]'>
+                        </span>
+                    </h6>
+                </div>
+                <a href="pricing"><button type="button" class="btn btn-primary">View Prices  <i class="fa-solid fa-arrow-right"></i></button></a>    
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/type.js"></script>
 </body>
 </html>

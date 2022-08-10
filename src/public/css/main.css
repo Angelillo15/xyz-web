@@ -1,0 +1,65 @@
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    margin: 0;
+    grid-template-areas: 
+      "about about img img img"; 
+
+  }
+.about { 
+  grid-area: about;
+  margin-top: 200px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+      grid-template-rows: 1fr; 
+      gap: 0px 0px; 
+      margin: 0;
+      grid-template-areas: 
+        "about about about about about"; 
+    }
+    .about { 
+      grid-area: about;
+      margin-top: 50px;
+    }
+}
+.plugins{
+    margin: 50px;
+    padding-top: 100px;
+}
+
+
+.write {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    margin: 0 auto;
+    font-family: "Courier New";
+    border-right: 0.15em solid #18bdec;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+}
+
+.type-text {
+    font-size: 1.25rem;
+    font-family: "Courier New";
+    color:#ececec;
+}

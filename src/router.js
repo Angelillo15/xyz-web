@@ -22,4 +22,12 @@ router.get('/vouches', (req, res) =>{
     res.render('vouches.ejs')
 })
 
+router.get('/admin', (req, res) =>{
+    res.status(418).send('I\'m a teapot')
+})
+
+router.all('*', (req, res) =>{
+    res.status(404).render('404.ejs')
+})
+
 module.exports = router;

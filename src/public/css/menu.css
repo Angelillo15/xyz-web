@@ -1,17 +1,13 @@
-.bg-image {
-    /* The image used */
+.bg-image-full {
     background-image: url("/public/img/background/bg.png");
   
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
   
-    /* Full height */
     height: 100%;
   
-    /* Center and scale the image nicely */
-    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
 }
 
@@ -21,7 +17,7 @@
 }
 
 .bg-blur {
-    height: 100vh;
+    height: 120%;
     width: 100%;
     background-image: url("/public/img/background/bg.png");
     filter: blur(8px);
